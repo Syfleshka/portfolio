@@ -1,0 +1,22 @@
+.header__menu {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  flex-grow: 1;
+}
+.dark .header__menu {
+  background-color: black;
+}
+
+.menu_item {
+
+}
+
+.menu-item__text {
+  position: relative;
+  margin: 0 0;
+  font-size: 8vw;
+  text-transform: uppercase;
+  font-weight: 900;
+}
