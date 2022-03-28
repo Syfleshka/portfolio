@@ -13,15 +13,15 @@ const menuItems = [
     {
         label: 'Contact',
         link: '#'
-    },
+    }
 ]
 
 function Menu() {
     return (
         <div className="header__menu">
             {
-                menuItems.map(item => {
-                    return <MenuItem item={item}/>
+                menuItems.map((item, i) => {
+                    return <MenuItem item={item} key={i}/>
                 })
             }
         </div>
