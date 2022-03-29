@@ -1,3 +1,5 @@
+@import "src/mixins.scss";
+
 .header__menu {
   width: auto;
   display: flex;
@@ -9,14 +11,45 @@
   background-color: black;
 }
 
-.menu_item {
-
+.menu-item {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  transition: margin-left 1s ease-in-out;
+  justify-content: left;
+  text-decoration: none;
+}
+.menu-item:hover {
+  justify-content: center;
+  transition: justify-content 1s ease-in-out;
+}
+.menu-item:hover > .menu-item__text:nth-child(1) {
+  color: darkcyan;
+}
+.menu-item:hover > .menu-item__text:nth-child(4) {
+  color: black;
+}
+.dark .menu-item:hover > .menu-item__text:nth-child(4) {
+  color: white;
+}
+.menu-item:active > .menu-item__text:nth-child(4) {
+  color: crimson;
 }
 
 .menu-item__text {
   position: relative;
   margin: 0 0;
   font-size: 8vw;
+  @include for-desktop-up {
+    font-size: 6vw;
+  }
   text-transform: uppercase;
   font-weight: 900;
+  color: darkcyan;
+}
+.menu-item__text:nth-child(1) {
+  color: black;
+}
+.dark .menu-item__text:nth-child(1) {
+  color: white;
 }
