@@ -3,10 +3,8 @@ import './ThemeSwitch.scss'
 
 function ThemeSwitch({theme, updateTheme}) {
 
-
     const switchTheme = () => {
-        theme === 'dark' ?
-            updateTheme('light') : updateTheme('dark')
+        theme === 'dark' ? updateTheme('light') : updateTheme('dark')
     }
 
     useEffect(() => {
