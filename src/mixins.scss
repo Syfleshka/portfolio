@@ -13,3 +13,8 @@
 @mixin for-big-desktop-up {
   @media (min-width: 1800px) { @content; }
 }
+
+$color-dark: black;
+$color-light: #d5d5d5;
+$color-link: darkcyan;
+$color-link-hover: crimson;

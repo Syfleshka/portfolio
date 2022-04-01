@@ -1,5 +1,5 @@
-import {useEffect} from "react"
 import './ThemeSwitch.scss'
+import {useEffect} from "react"
 
 function ThemeSwitch({theme, updateTheme}) {
 

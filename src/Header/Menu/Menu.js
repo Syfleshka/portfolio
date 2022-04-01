@@ -4,27 +4,27 @@ import './Menu.scss'
 const menuItems = [
     {
         label: 'About',
-        link: '#'
+        link: '/about'
     },
     {
         label: 'Portfolio',
-        link: '#'
+        link: '/portfolio'
     },
     {
         label: 'Contact',
-        link: '#'
+        link: '/contact'
     }
 ]
 
 function Menu() {
     return (
-        <div className="header__menu">
+        <nav className="header__menu">
             {
                 menuItems.map((item, i) => {
                     return <MenuItem item={item} key={i}/>
                 })
             }
-        </div>
+        </nav>
     );
 }
 

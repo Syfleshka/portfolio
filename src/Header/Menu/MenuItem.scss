@@ -1,15 +1,4 @@
-@import "src/mixins.scss";
-
-.header__menu {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  flex-grow: 1;
-}
-.dark .header__menu {
-  background-color: black;
-}
+@import "../../mixins";
 
 .menu-item {
   display: flex;
@@ -32,7 +21,11 @@
 .dark .menu-item:hover > .menu-item__text:nth-child(4) {
   color: white;
 }
-.menu-item:active > .menu-item__text:nth-child(4) {
+
+.menu-item.active:hover > .menu-item__text:nth-child(4),
+.dark .menu-item.active:hover > .menu-item__text:nth-child(4),
+.menu-item:active > .menu-item__text:nth-child(4),
+.menu-item.active > .menu-item__text:nth-child(1) {
   color: crimson;
 }
 

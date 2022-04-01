@@ -1,0 +1,12 @@
+@import "../../mixins";
+
+.header__menu {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  flex-grow: 1;
+}
+.dark .header__menu {
+  background-color: black;
+}

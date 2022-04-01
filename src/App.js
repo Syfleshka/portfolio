@@ -1,8 +1,7 @@
-import './App.scss';
-import Logo from "./Logo/Logo";
-import Menu from "./Menu/Menu";
-import {useState} from "react";
-import ThemeSwitch from "./ThemeSwitch/ThemeSwitch";
+import './App.scss'
+import {useState} from "react"
+import {Outlet} from "react-router-dom"
+import {Header} from "./Header/Header";
 
 function App() {
 
@@ -15,11 +14,13 @@ function App() {
     }
 
     return (
-        <header className={`header`}>
-            <ThemeSwitch theme={state.theme} updateTheme={updateTheme}/>
-            <Logo/>
-            <Menu/>
-        </header>
+        <>
+            <Header state={state} updateTheme={updateTheme}/>
+            <Outlet/>
+            <footer className={`footer`}>
+                <p>Made by Alex D.</p>
+            </footer>
+        </>
     );
 }
 
