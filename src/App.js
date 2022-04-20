@@ -2,6 +2,7 @@ import './App.scss'
 import {useState} from "react"
 import {Outlet} from "react-router-dom"
 import {Header} from "./Header/Header";
+import {Footer} from "./Footer/Footer";
 
 function App() {
 
@@ -17,9 +18,7 @@ function App() {
         <>
             <Header state={state} updateTheme={updateTheme}/>
             <Outlet/>
-            <footer className={`footer`}>
-                <p>Made by Alex D.</p>
-            </footer>
+            <Footer/>
         </>
     );
 }

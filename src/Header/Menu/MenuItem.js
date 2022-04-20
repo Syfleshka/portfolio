@@ -11,6 +11,14 @@ function MenuItem({item}) {
             <span className="menu-item__text">{item.label}</span>
             <span className="menu-item__text">{item.label}</span>
             <span className="menu-item__text">{item.label}</span>
+            <span className="menu-item__text">{item.label}</span>
+            <span className="menu-item__text">{item.label}</span>
+            <span className="menu-item__text">{item.label}</span>
+            <span className="menu-item__text">{item.label}</span>
+            <span className="menu-item__text">{item.label}</span>
+            <span className="menu-item__text">{item.label}</span>
+            <span className="menu-item__text">{item.label}</span>
+            <span className="menu-item__text">{item.label}</span>
         </NavLink>
     );
 }

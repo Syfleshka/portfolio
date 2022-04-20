@@ -13,36 +13,33 @@
   transition: justify-content 1s ease-in-out;
 }
 .menu-item:hover > .menu-item__text:nth-child(1) {
-  color: darkcyan;
+  color: $color-link;
 }
-.menu-item:hover > .menu-item__text:nth-child(4) {
-  color: black;
+.menu-item:hover > .menu-item__text:nth-child(8) {
+  color: $color-dark;
 }
-.dark .menu-item:hover > .menu-item__text:nth-child(4) {
-  color: white;
+.dark .menu-item:hover > .menu-item__text:nth-child(8) {
+  color: $color-light;
 }
 
-.menu-item.active:hover > .menu-item__text:nth-child(4),
-.dark .menu-item.active:hover > .menu-item__text:nth-child(4),
-.menu-item:active > .menu-item__text:nth-child(4),
+.menu-item.active:hover > .menu-item__text:nth-child(8),
+.dark .menu-item.active:hover > .menu-item__text:nth-child(8),
+.menu-item:active > .menu-item__text:nth-child(8),
 .menu-item.active > .menu-item__text:nth-child(1) {
-  color: crimson;
+  color: $color-link-hover;
 }
 
 .menu-item__text {
   position: relative;
   margin: 0 0;
-  font-size: 8vw;
-  @include for-desktop-up {
-    font-size: 6vw;
-  }
+  @include font('bigmenu');
   text-transform: uppercase;
   font-weight: 900;
-  color: darkcyan;
+  color: $color-link;
 }
 .menu-item__text:nth-child(1) {
-  color: black;
+  color: $color-dark;
 }
 .dark .menu-item__text:nth-child(1) {
-  color: white;
+  color: $color-light;
 }

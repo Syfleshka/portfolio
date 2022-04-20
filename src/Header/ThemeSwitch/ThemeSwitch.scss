@@ -1,3 +1,5 @@
+@import "../../mixins";
+
 .header__upper {
   display:flex;
   flex-direction: row;
@@ -9,17 +11,17 @@
   margin: 10px 0 10px auto;
   display: flex;
   user-select: none;
-  background: darkcyan;
+  background: $color-link;
   width: 140px;
   padding: 4px;
 }
 .theme-switcher:hover {
-  color: darkcyan;
-  background: black;
+  color: $color-link;
+  background: $color-dark;
 }
 .dark .theme-switcher:hover {
-  color: darkcyan;
-  background: white;
+  color: $color-link;
+  background: $color-light;
 }
 
 
