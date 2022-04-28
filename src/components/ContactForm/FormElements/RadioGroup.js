@@ -9,23 +9,25 @@ const RadioGroup = (props) => {
     };
 
     return (
-        <div className={`form-element form__element form-element_select`}>
+        <div className={`form-element form__element radio-group`}>
             {props.inputList.map((elem, index) => {
                 return (
-                    <label
-                        htmlFor={`radio_${elem.value}`}
-                        className={`form-element__label form-element__label_select`}
-                        key={index}
-                    >
+                    <div key={index} className={`radio-group__element`}>
                         <input
                             type="radio"
                             name={'communication-channel'}
                             id={`radio_${elem.value}`}
                             checked={communicationChannel === elem.value}
                             onChange={() => handleChange(elem.value)}
+                            className={`radio-group-element__input`}
                         />
-                        {elem.name}
-                    </label>
+                        <label
+                            htmlFor={`radio_${elem.value}`}
+                            className={`radio-group-element__label`}
+                        >
+                            {elem.name}
+                        </label>
+                    </div>
                 );
             })}
         </div>

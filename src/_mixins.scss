@@ -64,102 +64,102 @@ $color-link-hover: crimson;
     }
   } @else if $size == 'h1' {
     font-size: 44px;
-    line-height: 52px;
+    line-height: 1.4em;
     @include for-tablet-portrait-up {
       font-size: 60px;
-      line-height: 68px;
+      line-height: 1.4em;
     }
     @include for-desktop-up {
       font-size: 76px;
-      line-height: 84px;
+      line-height: 1.4em;
     }
   } @else if $size == 'h2' {
     font-size: 32px;
-    line-height: 36px;
+    line-height: 1.4em;
     @include for-tablet-portrait-up {
       font-size: 48px;
-      line-height: 56px;
+      line-height: 1.4em;
     }
     @include for-desktop-up {
       font-size: 60px;
-      line-height: 68px;
+      line-height: 1.4em;
     }
   } @else if $size == 'h3' {
     font-size: 28px;
-    line-height: 32px;
+    line-height: 1.4em;
     @include for-tablet-portrait-up {
       font-size: 32px;
-      line-height: 36px;
+      line-height: 1.4em;
     }
     @include for-desktop-up {
       font-size: 48px;
-      line-height: 56px;
+      line-height: 1.4em;
     }
   } @else if $size == 'h4' {
     font-size: 24px;
-    line-height: 28px;
+    line-height: 1.4em;
     @include for-tablet-portrait-up {
       font-size: 24px;
-      line-height: 28px;
+      line-height: 1.4em;
     }
     @include for-desktop-up {
       font-size: 32px;
-      line-height: 36px;
+      line-height: 1.4em;
     }
   } @else if $size == 'h5' {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.4em;
     @include for-tablet-portrait-up {
       font-size: 20px;
-      line-height: 24px;
+      line-height: 1.4em;
     }
     @include for-desktop-up {
       font-size: 24px;
-      line-height: 28px;
+      line-height: 1.4em;
     }
   } @else if $size == 'h6' {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.4em;
     @include for-tablet-portrait-up {
       font-size: 16px;
-      line-height: 20px;
+      line-height: 1.4em;
     }
     @include for-desktop-up {
       font-size: 20px;
-      line-height: 24px;
+      line-height: 1.4em;
     }
   } @else if $size == 'paragraph' {
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.4em;
     @include for-tablet-portrait-up {
       font-size: 14px;
-      line-height: 16px;
+      line-height: 1.4em;
     }
     @include for-desktop-up {
       font-size: 16px;
-      line-height: 20px;
+      line-height: 1.4em;
     }
   } @else if $size == 'footer' {
     font-size: 12px;
-    line-height: 16px;
+    line-height: 1.4em;
     @include for-tablet-portrait-up {
       font-size: 12px;
-      line-height: 16px;
+      line-height: 1.4em;
     }
     @include for-desktop-up {
       font-size: 14px;
-      line-height: 16px;
+      line-height: 1.4em;
     }
   } @else {
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.4em;
     @include for-tablet-portrait-up {
       font-size: 14px;
-      line-height: 16px;
+      line-height: 1.4em;
     }
     @include for-desktop-up {
       font-size: 16px;
-      line-height: 20px;
+      line-height: 1.4em;
     }
   }
 }

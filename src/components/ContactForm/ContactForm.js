@@ -4,6 +4,7 @@ import PhoneInput, { isPossiblePhoneNumber } from 'react-phone-number-input';
 import { useState } from 'react';
 import RadioGroup from './FormElements/RadioGroup';
 import FormElem from './FormElements/FormElem';
+import './ContactForm.scss'
 
 const TG_API = process.env.REACT_APP_TG_API_KEY;
 
@@ -88,7 +89,7 @@ const ContactForm = () => {
                         type="text"
                         {...register('telegram', registerOptions.telegram)}
                         id="telegram"
-                        className={`form-element__input`}
+                        className={`input-field__input`}
                     />
                 </FormElem>
             ) : communicationChannel === 'phone' ? (
@@ -101,14 +102,13 @@ const ContactForm = () => {
                                 type="phone"
                                 id="phone"
                                 name="phone"
-                                className={`form-element__input`}
+                                className={`input-field__input-phone`}
                                 value={value}
                                 onChange={onChange}
                             />
                         )}
                         name="phone"
                         rules={registerOptions.phone}
-                        className={`form-element__input`}
                     />
                 </FormElem>
             ) : communicationChannel === 'email' ? (
@@ -118,7 +118,7 @@ const ContactForm = () => {
                         type="text"
                         {...register('email', registerOptions.email)}
                         id="email"
-                        className={`form-element__input`}
+                        className={`input-field__input`}
                     />
                 </FormElem>
             ) : null}
@@ -129,7 +129,7 @@ const ContactForm = () => {
                     type="text"
                     {...register('name', registerOptions.name)}
                     id="name"
-                    className={`form-element__input`}
+                    className={`input-field__input`}
                 />
             </FormElem>
             <FormElem className={`form__element_new-row form__element_2col`} name={`Message:`} error={errors.message}>
@@ -138,12 +138,12 @@ const ContactForm = () => {
                     {...register('message', registerOptions.message)}
                     rows={8}
                     id="message"
-                    className={`form-element__input`}
+                    className={`input-field__input`}
                 />
             </FormElem>
 
             <div className={`form-element form__element form__element_new-row`}>
-                <button type={`submit`}>Send</button>
+                <button type={`submit`} className={`input-button`}>Send</button>
             </div>
         </form>
     );

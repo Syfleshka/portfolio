@@ -8,8 +8,8 @@ function Contact() {
                 <h2 className={`header contact__header`}>Feel free to contact me through:</h2>
                 <p className={`paragraph contact__paragraph paragraph_text`}>
                     Email:{' '}
-                    <a className={`href_text`} href={`mailto:alexandr.d@yoursystem.ru`}>
-                        alexandr.d@yoursystem.ru
+                    <a className={`href_text`} href={`mailto:alexandr.d@syfle.ru`}>
+                        alexandr.d@syfle.ru
                     </a>
                     <br />
                     Telegram:{' '}

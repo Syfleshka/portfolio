@@ -1,0 +1,124 @@
+@import '../../mixins';
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 380px));
+  grid-gap: 40px;
+}
+
+.form__element {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.form__element_new-row {
+  grid-column-start: 1;
+}
+
+.form__element_2col {
+  @include for-tablet-portrait-up {
+    grid-column-end: span 2;
+  }
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.radio-group__element {
+  flex-grow: 1;
+  display: flex;
+}
+.radio-group-element__input {
+  position: absolute;
+  visibility: hidden;
+}
+.radio-group-element__label {
+  cursor: pointer;
+  padding: 12px;
+  width: 100%;
+  text-align: center;
+  background-color: $color-link;
+  @include font('h6');
+  font-weight: 700;
+}
+.radio-group-element__label:hover {
+  background-color: $color-link-hover;
+}
+.radio-group-element__input:checked + .radio-group-element__label {
+  background-color: $color-light;
+  color: $color-dark;
+  cursor: default;
+}
+.dark .radio-group-element__input:checked + .radio-group-element__label {
+  background-color: $color-dark;
+  color: $color-light;
+}
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.input-field__label {
+  @include font('h6');
+  font-weight: 700;
+}
+.input-field__input, .PhoneInputInput {
+  @include font('h6');
+  color: $color-dark;
+  background-color: $color-light;
+  border: solid 1px $color-dark;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.dark .input-field__input, .dark .PhoneInputInput {
+  color: $color-light;
+  background-color: $color-dark;
+  border: solid 1px $color-light;
+  box-sizing: border-box;
+}
+
+.PhoneInputCountry {
+  margin-right: 12px;
+  background-color: $color-link;
+}
+.PhoneInputCountry:hover {
+  background-color: $color-link-hover;
+}
+.dark .PhoneInputCountry {
+}
+
+.PhoneInputCountryIcon {
+  margin: 8px;
+}
+.PhoneInputCountrySelectArrow {
+  margin-right: 8px;
+}
+
+.input-field__error {
+  @include font('footer');
+  color: $color-link-hover;
+  animation: error 1s alternate infinite;
+  @keyframes error {
+    0% {opacity: 1;}
+    100% {opacity: .8;}
+  }
+}
+.input-button {
+  cursor: pointer;
+  padding: 12px;
+  width: 100%;
+  text-align: center;
+  background-color: $color-link;
+  @include font('h6');
+  font-weight: 700;
+  border: none;
+}
+.dark .input-button{
+  color: $color-light;
+}
+.input-button:hover {
+  background-color: $color-link-hover;
+}

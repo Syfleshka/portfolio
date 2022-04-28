@@ -12,12 +12,13 @@
 .section {
   display: flex;
   flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 0 20px;
   @include for-tablet-landscape-up {
     padding: 0 60px;
   }
 }
-
 .contact__header {
   @include font('h2');
   font-weight: 900;
@@ -25,36 +26,12 @@
 
 .paragraph_text {
   @include font('h6');
-  line-height: 1.4em;
   font-weight: 700;
-}
-
-.form {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 260px));
-  grid-gap: 40px;
 }
 
 .form__header {
   @include font('h3');
   font-weight: 900;
-}
-
-.form__element {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.form__element_new-row {
-  grid-column-start: 1;
-}
-
-.form__element_2col {
-  @include for-tablet-portrait-up {
-    grid-column-end: span 2;
-  }
 }
 
 .href_text {
