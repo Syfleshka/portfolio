@@ -43,18 +43,23 @@
   background-color: $color-link;
   @include font('h6');
   font-weight: 700;
+  border: solid 2px $color-link;
+  box-sizing: border-box;
 }
 .radio-group-element__label:hover {
   background-color: $color-link-hover;
+  border: solid 2px $color-link-hover;
 }
 .radio-group-element__input:checked + .radio-group-element__label {
   background-color: $color-light;
   color: $color-dark;
   cursor: default;
+  border: solid 2px $color-dark;
 }
 .dark .radio-group-element__input:checked + .radio-group-element__label {
   background-color: $color-dark;
   color: $color-light;
+  border: solid 2px $color-light;
 }
 .input-field {
   display: flex;
@@ -69,14 +74,14 @@
   @include font('h6');
   color: $color-dark;
   background-color: $color-light;
-  border: solid 1px $color-dark;
+  border: solid 2px $color-dark;
   padding: 8px;
   box-sizing: border-box;
 }
 .dark .input-field__input, .dark .PhoneInputInput {
   color: $color-light;
   background-color: $color-dark;
-  border: solid 1px $color-light;
+  border: solid 2px $color-light;
   box-sizing: border-box;
 }
 
@@ -112,13 +117,14 @@
   width: 100%;
   text-align: center;
   background-color: $color-link;
+  border: solid 2px $color-link;
   @include font('h6');
   font-weight: 700;
-  border: none;
 }
 .dark .input-button{
   color: $color-light;
 }
 .input-button:hover {
   background-color: $color-link-hover;
+  border: solid 2px $color-link-hover;
 }
