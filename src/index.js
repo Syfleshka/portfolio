@@ -4,23 +4,22 @@ import './normalize.css';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import About from './routes/About/About';
 import Portfolio from './routes/Portfolio/Portfolio';
 import Contact from './routes/Contact/Contact';
 
-console.log(process.env.PUBLIC_URL)
 ReactDOM.render(
     <React.StrictMode>
-        <BrowserRouter basemname={`/${process.env.PUBLIC_URL}`}>
+        <HashRouter>
             <Routes>
-                <Route path="/" element={<App />}>
+                <Route path="/" exact element={<App />}>
                     <Route path="about" element={<About />} />
                     <Route path="portfolio" element={<Portfolio />} />
                     <Route path="contact" element={<Contact />} />
                 </Route>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     </React.StrictMode>,
     document.getElementById('root'),
 );
