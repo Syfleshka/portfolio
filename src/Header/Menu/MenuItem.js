@@ -1,7 +1,7 @@
-import './MenuItem.scss'
-import { NavLink } from 'react-router-dom'
+import './MenuItem.scss';
+import { NavLink } from 'react-router-dom';
 
-function MenuItem({item}) {
+function MenuItem({ item }) {
     return (
         <NavLink className="menu-item" to={item.link}>
             <span className="menu-item__text">{item.label}</span>

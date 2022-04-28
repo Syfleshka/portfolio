@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './normalize.css'
+import './normalize.css';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter, Routes, Route} from "react-router-dom";
-import About from "./routes/About/About";
-import Portfolio from "./routes/Portfolio/Portfolio";
-import Contact from "./routes/Contact/Contact";
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import About from './routes/About/About';
+import Portfolio from './routes/Portfolio/Portfolio';
+import Contact from './routes/Contact/Contact';
 
 ReactDOM.render(
     <React.StrictMode>
@@ -22,7 +21,7 @@ ReactDOM.render(
             </Routes>
         </BrowserRouter>
     </React.StrictMode>,
-    document.getElementById('root')
+    document.getElementById('root'),
 );
 
 // If you want to start measuring performance in your app, pass a function

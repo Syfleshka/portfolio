@@ -1,29 +1,27 @@
-import MenuItem from './MenuItem'
-import './Menu.scss'
+import MenuItem from './MenuItem';
+import './Menu.scss';
 
 const menuItems = [
     {
         label: 'About',
-        link: '/about'
+        link: '/about',
     },
     {
         label: 'Portfolio',
-        link: '/portfolio'
+        link: '/portfolio',
     },
     {
         label: 'Contact',
-        link: '/contact'
-    }
-]
+        link: '/contact',
+    },
+];
 
 function Menu() {
     return (
         <nav className="header__menu">
-            {
-                menuItems.map((item, i) => {
-                    return <MenuItem item={item} key={i}/>
-                })
-            }
+            {menuItems.map((item, i) => {
+                return <MenuItem item={item} key={i} />;
+            })}
         </nav>
     );
 }
