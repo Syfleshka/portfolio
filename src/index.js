@@ -9,14 +9,15 @@ import About from './routes/About/About';
 import Portfolio from './routes/Portfolio/Portfolio';
 import Contact from './routes/Contact/Contact';
 
+console.log(process.env.PUBLIC_URL)
 ReactDOM.render(
     <React.StrictMode>
-        <BrowserRouter>
+        <BrowserRouter basemname={`/${process.env.PUBLIC_URL}`}>
             <Routes>
                 <Route path="/" element={<App />}>
-                    <Route path="/about" element={<About />} />
-                    <Route path="/portfolio" element={<Portfolio />} />
-                    <Route path="/contact" element={<Contact />} />
+                    <Route path="about" element={<About />} />
+                    <Route path="portfolio" element={<Portfolio />} />
+                    <Route path="contact" element={<Contact />} />
                 </Route>
             </Routes>
         </BrowserRouter>

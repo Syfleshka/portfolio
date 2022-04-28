@@ -10,7 +10,7 @@ body {
   color: $color-dark;
   background-color: $color-light;
   @include font('paragraph');
-  //overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 code {
@@ -22,7 +22,7 @@ code {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1920px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
