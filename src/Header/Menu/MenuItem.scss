@@ -1,30 +1,38 @@
 @import "../../mixins";
 
 .menu-item {
+  position: relative;
   display: flex;
   flex-direction: row;
-  overflow: hidden;
-  transition: margin-left 1s ease-in-out;
-  justify-content: left;
   text-decoration: none;
+  transition: all .5s ease-in-out;
+  width: fit-content;
+  margin: 0 auto;
 }
 .menu-item:hover {
-  justify-content: center;
-  transition: justify-content 1s ease-in-out;
+  transform: translateX(-50%);
+}
+.header-menu__wrapper {
+  position: relative;
+  left:0;
+  transition: all .5s ease-in-out;
+}
+.header-menu__wrapper_anim {
+  left:50%;
 }
 .menu-item:hover > .menu-item__text:nth-child(1) {
   color: $color-link;
 }
-.menu-item:hover > .menu-item__text:nth-child(8) {
+.menu-item:hover > .menu-item__text:nth-child(6) {
   color: $color-dark;
 }
-.dark .menu-item:hover > .menu-item__text:nth-child(8) {
+.dark .menu-item:hover > .menu-item__text:nth-child(6) {
   color: $color-light;
 }
 
-.menu-item.active:hover > .menu-item__text:nth-child(8),
-.dark .menu-item.active:hover > .menu-item__text:nth-child(8),
-.menu-item:active > .menu-item__text:nth-child(8),
+.menu-item.active:hover > .menu-item__text:nth-child(6),
+.dark .menu-item.active:hover > .menu-item__text:nth-child(6),
+.menu-item:active > .menu-item__text:nth-child(6),
 .menu-item.active > .menu-item__text:nth-child(1) {
   color: $color-link-hover;
 }
@@ -36,6 +44,7 @@
   text-transform: uppercase;
   font-weight: 900;
   color: $color-link;
+  transition: all .3s;
 }
 .menu-item__text:nth-child(1) {
   color: $color-dark;

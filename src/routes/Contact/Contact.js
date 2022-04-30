@@ -16,6 +16,9 @@ function Contact() {
                     <a className={`href_text`} href={`https://t.me/Syfleshek`}>
                         https://t.me/Syfleshek
                     </a>
+                    <br />
+                    <br />
+                    My name is Alexander Denisov 😊
                 </p>
             </section>
             <section className={`section`}>

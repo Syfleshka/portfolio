@@ -4,7 +4,7 @@ import PhoneInput, { isPossiblePhoneNumber } from 'react-phone-number-input';
 import { useState } from 'react';
 import RadioGroup from './FormElements/RadioGroup';
 import FormElem from './FormElements/FormElem';
-import './ContactForm.scss'
+import './ContactForm.scss';
 
 const TG_API = process.env.REACT_APP_TG_API_KEY;
 
@@ -143,7 +143,9 @@ const ContactForm = () => {
             </FormElem>
 
             <div className={`form-element form__element form__element_new-row`}>
-                <button type={`submit`} className={`input-button`}>Send</button>
+                <button type={`submit`} className={`input-button`}>
+                    Send
+                </button>
             </div>
         </form>
     );

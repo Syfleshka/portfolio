@@ -21,10 +21,7 @@ const RadioGroup = (props) => {
                             onChange={() => handleChange(elem.value)}
                             className={`radio-group-element__input`}
                         />
-                        <label
-                            htmlFor={`radio_${elem.value}`}
-                            className={`radio-group-element__label`}
-                        >
+                        <label htmlFor={`radio_${elem.value}`} className={`radio-group-element__label`}>
                             {elem.name}
                         </label>
                     </div>

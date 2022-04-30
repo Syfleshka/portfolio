@@ -3,6 +3,7 @@
 .header__menu {
   width: auto;
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   background-color: $color-light;
   flex-grow: 1;
