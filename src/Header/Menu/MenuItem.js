@@ -1,6 +1,6 @@
 import './MenuItem.scss';
 import { NavLink } from 'react-router-dom';
-import {useState} from "react";
+import { useState } from 'react';
 
 function MenuItem({ item }) {
     const [wrapperPositionCorrector, setWrapperPositionCorrector] = useState(false);
