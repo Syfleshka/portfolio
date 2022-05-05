@@ -1,25 +1,26 @@
 @import "../../mixins";
 
+.header-menu__wrapper {
+  position: relative;
+  left:0;
+  transition: left .5s ease-in-out;
+}
+.header-menu__wrapper:hover {
+  left:50%;
+}
+
 .menu-item {
   position: relative;
   display: flex;
   flex-direction: row;
   text-decoration: none;
-  transition: all .5s ease-in-out;
+  transition: transform .5s ease-in-out;
   width: fit-content;
-  margin: 0 auto;
 }
 .menu-item:hover {
   transform: translateX(-50%);
 }
-.header-menu__wrapper {
-  position: relative;
-  left:0;
-  transition: all .5s ease-in-out;
-}
-.header-menu__wrapper:hover {
-  left:50%;
-}
+
 .menu-item:hover > .menu-item__text:nth-child(1) {
   color: $color-link;
 }
