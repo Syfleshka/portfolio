@@ -1,5 +1,6 @@
 import { marked } from 'marked';
 import { useEffect, useState } from 'react';
+import Loader from '../../components/Loader/Loader';
 
 function About() {
     const [markdown, setMarkdown] = useState();
@@ -14,13 +15,12 @@ function About() {
             .then((text) => {
                 setMarkdown(marked(text));
             });
-        console.log(markdown);
     }, [markdown]);
     return (
         <div className={`main`}>
             <section className={`section`}>
                 <h2 className={`header contact__header`}>Hello, my name is Alexandr Denisov</h2>
-                <article dangerouslySetInnerHTML={{ __html: markdown }}></article>
+                {markdown ? <article dangerouslySetInnerHTML={{ __html: markdown }}></article> : <Loader />}
             </section>
         </div>
     );
