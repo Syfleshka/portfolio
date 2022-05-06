@@ -19,28 +19,13 @@
     padding: 0 60px;
   }
 }
+
 .contact__header {
   @include font('h2');
   font-weight: 900;
 }
 
-.paragraph_text {
-  @include font('h6');
-  font-weight: 700;
-}
-
 .form__header {
   @include font('h3');
   font-weight: 900;
-}
-
-.href_text {
-  color: $color-link;
-  text-decoration: none;
-  border-bottom: solid 1px;
-  box-sizing: border-box;
-}
-
-.href_text:hover {
-  color: $color-link-hover;
 }

@@ -111,20 +111,3 @@
     100% {opacity: .8;}
   }
 }
-.input-button {
-  cursor: pointer;
-  padding: 12px;
-  width: 100%;
-  text-align: center;
-  background-color: $color-link;
-  border: solid 2px $color-link;
-  @include font('h6');
-  font-weight: 700;
-}
-.dark .input-button{
-  color: $color-light;
-}
-.input-button:hover {
-  background-color: $color-link-hover;
-  border: solid 2px $color-link-hover;
-}

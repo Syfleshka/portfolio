@@ -1,0 +1,50 @@
+@import '../../mixins';
+
+.portfolio-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 380px));
+  grid-gap: 40px;
+}
+
+.portfolio-list__element {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border: solid 2px;
+  padding: 20px;
+}
+
+.portfolio-element__header {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.portfolio-element__description {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.portfolio-element__separator {
+  margin: auto 0 0 0;
+}
+.portfolio-element__links {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  line-height: 2em;
+}
+.portfolio-element__language {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.program-language {
+  padding: 4px;
+  background: rgb(0,0,0,.1);
+  font-weight: 500;
+}
+.dark .program-language {
+  background: rgb(255,255,255,.1);
+}
+
+.portfolio-link {
+  margin-top: 40px;
+  display: flex;
+}
