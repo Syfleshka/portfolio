@@ -1,6 +1,6 @@
-import ThemeSwitch from './ThemeSwitch/ThemeSwitch';
-import Logo from './Logo/Logo';
-import Menu from './Menu/Menu';
+import ThemeSwitch from '../ThemeSwitch/ThemeSwitch';
+import Logo from '../Logo/Logo';
+import Menu from '../Menu/Menu';
 import * as PropTypes from 'prop-types';
 
 export function Header(props) {
