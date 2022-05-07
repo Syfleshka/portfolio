@@ -8,6 +8,9 @@
 .header-menu__wrapper:hover {
   left:50%;
 }
+.menu-item-effect {
+  position: relative;
+}
 
 .menu-item {
   position: relative;
@@ -24,16 +27,16 @@
 .menu-item:hover > .menu-item__text:nth-child(1) {
   color: $color-link;
 }
-.menu-item:hover > .menu-item__text:nth-child(6) {
+.menu-item:hover > .menu-item__text:nth-child(8) {
   color: $color-dark;
 }
-.dark .menu-item:hover > .menu-item__text:nth-child(6) {
+.dark .menu-item:hover > .menu-item__text:nth-child(8) {
   color: $color-light;
 }
 
-.menu-item.active:hover > .menu-item__text:nth-child(6),
-.dark .menu-item.active:hover > .menu-item__text:nth-child(6),
-.menu-item:active > .menu-item__text:nth-child(6),
+.menu-item.active:hover > .menu-item__text:nth-child(8),
+.dark .menu-item.active:hover > .menu-item__text:nth-child(8),
+.menu-item:active > .menu-item__text:nth-child(8),
 .menu-item.active > .menu-item__text:nth-child(1) {
   color: $color-link-hover;
 }

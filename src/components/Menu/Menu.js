@@ -18,9 +18,9 @@ const menuItems = [
 
 function Menu() {
     return (
-        <nav className="header__menu">
+        <nav className={`header__menu`} id={`header-menu`}>
             {menuItems.map((item, i) => {
-                return <MenuItem item={item} key={i} />;
+                return <MenuItem item={item} key={i} id={i} />;
             })}
         </nav>
     );
