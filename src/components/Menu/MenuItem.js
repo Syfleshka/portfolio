@@ -18,9 +18,13 @@ function MenuItem({ item, id }) {
             menuItem.style.removeProperty('left')
         }
 
-        menuItem.addEventListener('mousemove', followMouse, false);
-        menuItem.addEventListener('mouseenter', followMouse, false);
-        menuItem.addEventListener('mouseleave', mouseOut, false);
+        menuItem.addEventListener('mousemove', followMouse);
+        menuItem.addEventListener('mouseleave', mouseOut);
+
+        return () => {
+            menuItem.removeEventListener('mousemove', followMouse);
+            menuItem.removeEventListener('mouseleave', mouseOut);
+        };
         
     }, [id]);
 
