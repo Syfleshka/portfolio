@@ -34,7 +34,7 @@ function Portfolio() {
         });
     }, []);
 
-    if (status.error !== 'ok') {
+    if (status.isFailed) {
         console.error(status.error);
     }
 
@@ -43,6 +43,7 @@ function Portfolio() {
             <section className={`section portfolio`}>
                 <h2 className={`header contact__header`}>My favorite projects</h2>
                 {portfolio.length ? <PortfolioItems portfolio={portfolio} /> : <Loader />}
+                {status.isFailed ? <p className={`paragraph_text`}>Error. {status.error}</p> : null}
                 <div className={`portfolio-link`}>
                     <a
                         className={`input-button button_half center`}
