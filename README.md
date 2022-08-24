@@ -1,6 +1,6 @@
 # Portfolio page
 
-## Stack
+## Used packages
 
 * create-react-app
 * react-hook-form
