@@ -52,5 +52,8 @@
             "last 1 safari version"
         ]
     },
-    "homepage": "https://syfleshka.github.io/portfolio/"
+    "homepage": "https://syfleshka.github.io/portfolio/",
+    "devDependencies": {
+        "sass": "^1.60.0"
+    }
 }
