@@ -1,6 +1,7 @@
 import { marked } from 'marked';
 import { useEffect, useState } from 'react';
 import Loader from '../../components/Loader/Loader';
+import './About.scss';
 
 function About() {
     const [status, setStatus] = useState({
@@ -30,8 +31,7 @@ function About() {
     }
     return (
         <div className={`main`}>
-            <section className={`section`}>
-                <h2 className={`header contact__header`}>Hello, my name is Alexandr Denisov</h2>
+            <section className={`section markdown`}>
                 {markdown ? <article dangerouslySetInnerHTML={{ __html: markdown }}></article> : <Loader />}
                 {status.isFailed ? <p className={`paragraph_text`}>Error. {status.error}</p> : null}
             </section>

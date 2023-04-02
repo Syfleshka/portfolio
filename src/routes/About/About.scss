@@ -1,0 +1,15 @@
+@import "../../mixins";
+
+.markdown {
+  h1 {
+    line-height: 1.2em;
+  }
+
+  a {
+    color: $color-link;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+}
